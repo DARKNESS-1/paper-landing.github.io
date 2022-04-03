@@ -1,0 +1,130 @@
+.__nav {
+    display        : flex;
+    justify-content: space-between;
+    height         : 104.27px;
+    left           : 0;
+    right          : 0;
+    top            : 0;
+
+    &-logo {
+        display: flex;
+        width  : 115.97px;
+        padding: 0;
+
+        li {
+            background-position: center;
+            background-repeat  : no-repeat;
+            background-size    : cover;
+
+            &:nth-child(1) {
+                background-image: $var_P;
+                height          : 31.924448013305664px;
+                width           : 23.409835815429688px;
+                left            : 1.5737686157226562px;
+                margin-top      : 2.5422210693359375px;
+                border-radius   : 0px;
+            }
+
+            &:nth-child(2) {
+                background-image: $var_a;
+                height          : 24.203338623046875px;
+                width           : 20.852458953857422px;
+                left            : 27.737701416015625px;
+                margin-top      : 10.60888671875px;
+                border-radius   : 0px;
+            }
+
+            &:nth-child(3) {
+                background-image: $var_p;
+                height          : 32.02589416503906px;
+                width           : 23.311473846435547px;
+                left            : 49.47540283203125px;
+                margin-top      : 10.654106140136719px;
+                border-radius   : 0px;
+            }
+
+            &:nth-child(4) {
+                background-image: $var_e;
+                height          : 24.493335723876953px;
+                width           : 18.88524627685547px;
+                left            : 77.11474609375px;
+                margin-top      : 10.60888671875px;
+                border-radius   : 0px;
+            }
+
+            &:nth-child(5) {
+                background-image: $var_r;
+                height          : 23.955554962158203px;
+                width           : 18.295082092285156px;
+                left            : 99.24591064453125px;
+                margin-top      : 10.60888671875px;
+                border-radius   : 0px;
+            }
+        }
+    }
+
+    &-links {
+        display: flex;
+    }
+
+    &-item {
+        margin-left: 1rem;
+
+        a {
+            font-family: 'Playfair Display';
+            font-style : normal;
+            font-weight: 400;
+            font-size  : 22px;
+            line-height: 0px;
+            color      : $color-white;
+        }
+    }
+
+    &-item-active a {
+        color: $color-red;
+    }
+}
+
+.__nav-footer {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    font-family    : $ff__footer;
+    font-size      : 13px;
+    line-height    : 28px;
+    letter-spacing : 0em;
+    text-align     : right;
+    color          : $color-gray-l;
+
+    &-copy {
+        display: flex;
+
+        p:first-child::after {
+            content     : '❤';
+            color       : $color-red;
+            margin-right: .25rem;
+        }
+    }
+
+    &-links {
+        display        : flex;
+        justify-content: space-around;
+        height         : 38px;
+        width          : 570px;
+        top            : 0px;
+        border-radius  : 0px;
+    }
+
+    &-item {
+
+        a {
+            color: $color-gray-l;
+        }
+
+        &-active {
+            a {
+                color: $color-white;
+            }
+        }
+    }
+}

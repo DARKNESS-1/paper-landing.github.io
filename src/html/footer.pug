@@ -1,0 +1,14 @@
+footer
+    .container.__nav-footer
+        nav.__nav-footer-copy
+            p © 2022 Paper. Made with 
+            p Webflow, by Kreshnik Beqi
+
+        nav.__nav-footer-links
+            - var items = ['Image Licensing', 'Instagram', 'Dribbble', 'Twitter','Facebook']
+            - var links = ['#', '#', '#', '#', '#']
+                each item, key in items 
+                    if item === 'Instagram'
+                        .__nav-footer-item.__nav-footer-item-active: a(href=links[key])= item
+                    else
+                        .__nav-footer-item: a(href=links[key])= item

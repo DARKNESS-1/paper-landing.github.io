@@ -1,0 +1,13 @@
+nav.__nav
+    ul.__nav-logo
+        each val in [,,,,,]
+            li= val
+
+    ul.__nav-links
+        - var items = ['Work', 'About', 'Blog', 'Contact']
+        - var links = ['#', '#', '#', '#']
+            each item, key in items 
+                if item === 'About'
+                    li.__nav-item.__nav-item-active: a(href=links[key])= item
+                else
+                    li.__nav-item: a(href=links[key])= item

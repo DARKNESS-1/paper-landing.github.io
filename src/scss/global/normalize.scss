@@ -1,0 +1,30 @@
+:root {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear  : both;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}

@@ -1,0 +1,22 @@
+body {
+    background : $color-white;
+    font-family: $ff__main;
+    color      : $color-white;
+    line-height: 1.5;
+    width      : $w100p;
+    margin     : initial;
+}
+
+main {
+    display      : grid;
+    grid-template: 1fr repeat(auto, 1fr);
+}
+
+.container {
+    max-width: 1024px;
+    margin   : 0 auto;
+}
+
+.is-hidden {
+    display: none;
+}

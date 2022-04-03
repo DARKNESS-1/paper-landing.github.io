@@ -1,0 +1,41 @@
+a {
+    width : 160px;
+    height: 44px;
+    left  : calc(50% - 160px/2);
+    top   : calc(50% - 44px/2 + 298px);
+}
+
+.__btn {
+    cursor        : pointer;
+    background    : transparent;
+    border        : 1px solid $color-white;
+    box-sizing    : border-box;
+    border-radius : 30px;
+    font-family   : $ff__lato;
+    font-size     : 14px;
+    font-weight   : $ff__bold;
+    line-height   : 24px;
+    letter-spacing: 0.5px;
+    text-align    : center;
+    vertical-align: top;
+    white-space   : nowrap;
+    color         : $color-white;
+    padding       : .5rem 2rem;
+    height        : 44px;
+    left          : 0;
+    right         : 0;
+    top           : 0;
+
+    &:hover {
+        background: lighten($color: $color-border, $amount: .1);
+    }
+
+    &-white {
+        background: $color-white;
+        color     : black;
+
+        &:hover {
+            background: lighten($color: $color-border, $amount: .1);
+        }
+    }
+}
