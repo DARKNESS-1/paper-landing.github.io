@@ -1,0 +1,177 @@
+//? CSS media screen code   
+
+// media queries to IE5-8 
+@media \0screen\,screen\9 {}
+
+// media queries to IE9 
+@media screen and (min-width:0\0) and (min-resolution: .001dpcm) {}
+
+// media queries to IE10+ 
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        background: black;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .__nav {
+        justify-content: flex-start;
+
+        &-links {
+            margin-right: 0;
+            margin-left : auto;
+            width       : auto;
+
+            &.is-hidden {
+                display: initial !important;
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            position: relative;
+        }
+    }
+
+    .__nav-footer {
+        display  : flex;
+        flex-wrap: wrap;
+
+        &-copy {
+            margin-right: auto;
+        }
+
+        &-links {
+            display    : flex;
+            align-items: center;
+        }
+
+        &-item {
+            margin-left: $rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .__nav {
+            &-links {
+                position      : relative;
+                flex-direction: row;
+                align-items   : center;
+                background    : none;
+                top           : 0;
+                opacity       : 1;
+            }
+
+            &-item {
+                padding: 0;
+            }
+
+            &-menu_button {
+                display: none;
+            }
+        }
+
+        .__nav-footer {
+            justify-content: center;
+        }
+    }
+}
+
+// Firefox (any version)
+@-moz-document url-prefix() {
+    // .ff {
+    //     color: ;
+    // }
+}
+
+// Firefox (Quantum Only / Stylo) 
+@-moz-document url-prefix() {
+    // @supports (animation: calc(0s)) {
+
+    //     /* Stylo */
+    //     .ffStylo {
+    //         property: value;
+    //     }
+    // }
+}
+
+// Firefox Legacy (pre-Stylo)
+@-moz-document url-prefix() {
+    // @supports not (animation: calc(0s)) {
+
+    //     /* Gecko */
+    //     .ffGecko {
+    //         property: value;
+    //     }
+    // }
+}
+
+// Webkit (Chrome & Safari, any version) 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    // property: value;
+}
+
+// Google Chrome (29+)
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    // .chrome {
+    //     property: value;
+    // }
+}
+
+// Safari (7.1+) 
+/*
+_::-webkit-full-page-media,
+_:future,
+:root .safari_only {
+    property: value;
+}
+*/
+
+// Safari (from 6.1 to 10.0)
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    // @media {
+    //     .safari6 {
+    //         color           : ;
+    //         background-color: ;
+    //     }
+    // }
+}
+
+// Safari (10.1+)
+@media not all and (min-resolution:.001dpcm) {
+    // @media {
+    //     .safari10 {
+    //         color           : ;
+    //         background-color: ;
+    //     }
+    // }
+}
+
+// Opera (12+)
+@media (min-resolution: .001dpcm) {
+
+    // _:-o-prefocus,
+    // .selector {
+    //     .opera12 {
+    //         color           : ;
+    //         background-color: ;
+    //     }
+    // }
+}
+
+// Opera (11 and lower)
+@media all and (-webkit-min-device-pixel-ratio:10000),
+not all and (-webkit-min-device-pixel-ratio:0) {
+    // .opera11 {
+    //     color           : ;
+    //     background-color: ;
+    // }
+}

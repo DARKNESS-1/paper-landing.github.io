@@ -1,3 +1,6 @@
+//? CSS Navbar code   
+//* media screen   
+
 .__nav {
     display        : flex;
     justify-content: space-between;
@@ -12,119 +15,199 @@
         padding: 0;
 
         li {
-            background-position: center;
-            background-repeat  : no-repeat;
-            background-size    : cover;
+            border-radius: 0px;
 
             &:nth-child(1) {
-                background-image: $var_P;
-                height          : 31.924448013305664px;
-                width           : 23.409835815429688px;
-                left            : 1.5737686157226562px;
-                margin-top      : 2.5422210693359375px;
-                border-radius   : 0px;
+                height    : 31.924448013305664px;
+                width     : 23.409835815429688px;
+                left      : 1.5737686157226562px;
+                margin-top: 2.5422210693359375px;
             }
 
             &:nth-child(2) {
-                background-image: $var_a;
-                height          : 24.203338623046875px;
-                width           : 20.852458953857422px;
-                left            : 27.737701416015625px;
-                margin-top      : 10.60888671875px;
-                border-radius   : 0px;
+                height    : 24.203338623046875px;
+                width     : 20.852458953857422px;
+                left      : 27.737701416015625px;
+                margin-top: 10.60888671875px;
             }
 
             &:nth-child(3) {
-                background-image: $var_p;
-                height          : 32.02589416503906px;
-                width           : 23.311473846435547px;
-                left            : 49.47540283203125px;
-                margin-top      : 10.654106140136719px;
-                border-radius   : 0px;
+                height    : 32.02589416503906px;
+                width     : 23.311473846435547px;
+                left      : 49.47540283203125px;
+                margin-top: 10.654106140136719px;
             }
 
             &:nth-child(4) {
-                background-image: $var_e;
-                height          : 24.493335723876953px;
-                width           : 18.88524627685547px;
-                left            : 77.11474609375px;
-                margin-top      : 10.60888671875px;
-                border-radius   : 0px;
+                height    : 24.493335723876953px;
+                width     : 18.88524627685547px;
+                left      : 77.11474609375px;
+                margin-top: 10.60888671875px;
             }
 
             &:nth-child(5) {
-                background-image: $var_r;
-                height          : 23.955554962158203px;
-                width           : 18.295082092285156px;
-                left            : 99.24591064453125px;
-                margin-top      : 10.60888671875px;
-                border-radius   : 0px;
+                height    : 23.955554962158203px;
+                width     : 18.295082092285156px;
+                left      : 99.24591064453125px;
+                margin-top: 10.60888671875px;
             }
-        }
-    }
-
-    &-links {
-        display: flex;
-    }
-
-    &-item {
-        margin-left: 1rem;
-
-        a {
-            font-family: 'Playfair Display';
-            font-style : normal;
-            font-weight: 400;
-            font-size  : 22px;
-            line-height: 0px;
-            color      : $color-white;
-        }
-    }
-
-    &-item-active a {
-        color: $color-red;
-    }
-}
-
-.__nav-footer {
-    display        : flex;
-    justify-content: space-between;
-    align-items    : center;
-    font-family    : $ff__footer;
-    font-size      : 13px;
-    line-height    : 28px;
-    letter-spacing : 0em;
-    text-align     : right;
-    color          : $color-gray-l;
-
-    &-copy {
-        display: flex;
-
-        p:first-child::after {
-            content     : '❤';
-            color       : $color-red;
-            margin-right: .25rem;
         }
     }
 
     &-links {
         display        : flex;
-        justify-content: space-around;
-        height         : 38px;
-        width          : 570px;
-        top            : 0px;
-        border-radius  : 0px;
+        justify-content: end;
+        width          : $w100p;
     }
 
     &-item {
-
-        a {
-            color: $color-gray-l;
-        }
+        font-family: $ff__main;
+        font-size  : 22px;
+        color      : $color-white;
+        margin-left: 1rem;
 
         &-active {
-            a {
-                color: $color-white;
+            color: $color-red !important;
+        }
+    }
+
+    &-collapse {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .__nav {
+
+        &-links {
+            &.is-hidden {
+                display: none;
             }
+
+            position           : fixed;
+            flex-direction     : column;
+            place-items        :center start;
+            background         : black;
+            width              : $w100p;
+            height             : auto;
+            top                : -$w100p;
+            right              : 0;
+            left               : 0;
+            overflow-y         : auto;
+            -webkit-transition : 0.8s;
+            -moz-transition    : 0.8s;
+            -o-transition      : 0.8s;
+            transition         : 0.8s;
+            opacity            : .5;
+            padding            : $rem*2 0;
+            z-index            : 30;
+            margin-top         : 0;
+        }
+
+        &-item {
+            padding: $rem;
+
+        }
+
+        &-collapse {
+            display      : initial !important;
+            display      : flex;
+            place-items  : center end;
+            padding-right: $rem;
+
+        }
+
+        &_overlay {
+            display : none;
+            position: fixed;
+            top     : 0;
+            right   : 0;
+            bottom  : 0;
+            left    : 0;
+            width   : $w100p;
+            height  : $w100p;
+            z-index : 10;
+        }
+
+        &-menu_button {
+            position          : fixed;
+            top               : $rem;
+            right             : $rem;
+            z-index           : 30;
+            width             : 3rem;
+            height            : 3rem;
+            border-radius     : 50%;
+            background-color  : rgba(255, 255, 255, 0.5);
+            -webkit-transition: 0.4s;
+            -moz-transition   : 0.4s;
+            -o-transition     : 0.4s;
+            transition        : 0.4s;
+        }
+
+        &-menu_button:hover &-menu_lines {
+            filter: brightness(0.7);
+        }
+
+        &-menu_button:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        &-menu_lines::before,
+        &-menu_lines::after,
+        &-menu_lines {
+            position          : absolute;
+            left              : 0;
+            width             : 50px;
+            height            : 3px;
+            background-color  : $color-red;
+            -webkit-transition: 0.4s;
+            -moz-transition   : 0.4s;
+            -o-transition     : 0.4s;
+            transition        : 0.4s;
+        }
+
+        &-menu_lines {
+            top      : 50%;
+            left     : 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-menu_lines::before {
+            content: '';
+            top    : -12px;
+        }
+
+        &-menu_lines::after {
+            content: '';
+            top    : 12px;
+        }
+
+        &_active &-menu_lines {
+            background-color: transparent;
+        }
+
+        &_active &-menu_lines::before {
+            top      : 0;
+            transform: rotate(45deg);
+        }
+
+        &_active &-menu_lines::after {
+            top      : 0;
+            transform: rotate(-45deg);
+        }
+
+        &_active &-links {
+            top               : 0;
+            -webkit-transition: 0.4s;
+            -moz-transition   : 0.4s;
+            -o-transition     : 0.4s;
+            transition        : 0.4s;
+        }
+
+        &_active &_overlay {
+            display         : block;
+            background-color: rgba(0, 0, 0, 0.5);
         }
     }
 }

@@ -11,7 +11,7 @@ export const html = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
-        /*.pipe(fileinclude())*/
+        .pipe(fileinclude())
         .pipe(pug({
             // Сжатие HTML файлов 
             pretty: true,

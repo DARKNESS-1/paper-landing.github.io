@@ -8,15 +8,70 @@ body {
 }
 
 main {
-    display      : grid;
-    grid-template: 1fr repeat(auto, 1fr);
+    display: grid;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
-    max-width: 1024px;
-    margin   : 0 auto;
+    display              : grid;
+    grid-template-columns: 1fr;
+    grid-template-rows   : repeat(auto, 1fr);
+    justify-content      : center;
+    text-align           : center;
+    height               : $w100p;
+    max-width            : 1024px;
+    margin               : 0 auto;
+
+    .__box {
+
+        .__title {
+            font-size  : 10.263929618768328vw;
+            line-height: 11.290322580645162vw;
+
+            &,
+            & * {
+                font-family   : $ff__main;
+                letter-spacing: 0em;
+                text-align    : center;
+            }
+
+            &-footer {
+                font-size  : 3.665689149560117vw;
+                line-height: 5.131964809384164vw;
+            }
+        }
+
+        h1 {
+            font-size  : 24px;
+            line-height: 38px;
+        }
+    }
 }
 
 .is-hidden {
     display: none;
+}
+
+// .filter{
+//     background-color: black;
+//     opacity: .5;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 100;
+// }
+
+@media screen and (max-width: 1080px) {
+    header>.container {
+        padding: 0 .5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .__title {
+        font-size  : calc(10.263929618768328vw / 1.5) !important;
+        line-height: initial !important;
+    }
 }

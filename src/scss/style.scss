@@ -1,10 +1,12 @@
+@import "global/normalize";
 @import "fonts";
 @import "global/vars";
-@import "global/normalize";
 @import "global/base";
 @import "global/button";
-@import "global/media_screen";
+@import "global/icons";
 
 @import "sections/section";
 @import "sections/nav";
 @import "sections/footer";
+
+@import "global/media_queries";

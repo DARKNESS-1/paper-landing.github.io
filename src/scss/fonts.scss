@@ -1,70 +1,77 @@
 @font-face{
-	font-family: Lato;
+	font-family: LatoBlack;
 	font-display: swap;
 	src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
 	font-weight: 900;
 	font-style: normal;
 }
 @font-face{
-	font-family: Lato;
+	font-family: LatoBlackItalic;
 	font-display: swap;
 	src: url("../fonts/Lato-BlackItalic.woff2") format("woff2"), url("../fonts/Lato-BlackItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
-	font-family: Lato;
+	font-family: LatoBold;
 	font-display: swap;
 	src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face{
-	font-family: Lato;
+	font-family: LatoBoldItalic;
 	font-display: swap;
 	src: url("../fonts/Lato-BoldItalic.woff2") format("woff2"), url("../fonts/Lato-BoldItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
-	font-family: Lato;
-	font-display: swap;
-	src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face{
-	font-family: Lato;
+	font-family: LatoItalic;
 	font-display: swap;
 	src: url("../fonts/Lato-Italic.woff2") format("woff2"), url("../fonts/Lato-Italic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
-	font-family: Lato;
+	font-family: LatoLight;
 	font-display: swap;
 	src: url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face{
-	font-family: OpenSans;
+	font-family: LatoLightItalic;
 	font-display: swap;
-	src: url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2") format("woff2"), url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.woff") format("woff");
+	src: url("../fonts/Lato-LightItalic.woff2") format("woff2"), url("../fonts/Lato-LightItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
-	font-family: Lato;
+	font-family: LatoRegular;
+	font-display: swap;
+	src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: LatoThin;
 	font-display: swap;
 	src: url("../fonts/Lato-Thin.woff2") format("woff2"), url("../fonts/Lato-Thin.woff") format("woff");
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face{
-	font-family: Lato;
+	font-family: LatoThinItalic;
 	font-display: swap;
-	src: url("../fonts/Lato-LightItalic.woff2") format("woff2"), url("../fonts/Lato-LightItalic.woff") format("woff");
+	src: url("../fonts/Lato-ThinItalic.woff2") format("woff2"), url("../fonts/Lato-ThinItalic.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: OpenSansItalic;
+	font-display: swap;
+	src: url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2") format("woff2"), url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -76,7 +83,7 @@
 	font-style: normal;
 }
 @font-face{
-	font-family: PlayfairDisplay;
+	font-family: PlayfairDisplayItalic;
 	font-display: swap;
 	src: url("../fonts/PlayfairDisplay-Italic-VariableFont_wght.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic-VariableFont_wght.woff") format("woff");
 	font-weight: 400;
@@ -86,13 +93,6 @@
 	font-family: PlayfairDisplay;
 	font-display: swap;
 	src: url("../fonts/PlayfairDisplay-VariableFont_wght.woff2") format("woff2"), url("../fonts/PlayfairDisplay-VariableFont_wght.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face{
-	font-family: Lato;
-	font-display: swap;
-	src: url("../fonts/Lato-ThinItalic.woff2") format("woff2"), url("../fonts/Lato-ThinItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }

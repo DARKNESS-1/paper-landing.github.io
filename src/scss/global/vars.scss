@@ -1,13 +1,8 @@
 //font-family
-$ff__awesome: 'fontawesome';
-$ff__main   : PlayfairDisplay;
-$ff__footer : OpenSans;
-$ff__lato   : Lato;
-
-//font-weight
-$ff__light  : 200;
-$ff__regular: 400;
-$ff__bold   : 700;
+$ff__awesome   : 'fontawesome';
+$ff__main      : PlayfairDisplay;
+$ff__open_sans : OpenSans;
+$ff__lato      : LatoRegular;
 
 //colors
 $color-red    : #de2b24;
@@ -17,20 +12,7 @@ $color-gray-l : #666666;
 $color-border : #e2e2e2;
 $color-white  : #ffffff;
 
-//icons
-$var_P :url(../../img/icons/vector_0.svg);
-$var_a :url(../../img/icons/vector_1.svg);
-$var_p :url(../../img/icons/vector_2.svg);
-$var_e :url(../../img/icons/vector_3.svg);
-$var_r :url(../../img/icons/vector_4.svg);
-
-// bg section
-$section_0:url(../../img/image_4.jpg) center/cover no-repeat;
-$section_1:url(../../img/image_3.jpg) center/cover no-repeat;
-$section_2:url(../../img/image_2.jpg) center/cover no-repeat;
-$section_3:url(../../img/image_1.jpg) center/cover no-repeat;
-$section_4:url(../../img/image_0.jpg) center/cover no-repeat;
-
 //width & height
+$rem   : 1rem;
 $w100p : 100%;
 $w10px : 10px;

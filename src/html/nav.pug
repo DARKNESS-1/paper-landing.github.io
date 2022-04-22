@@ -1,13 +1,15 @@
 nav.__nav
     ul.__nav-logo
-        each val in [,,,,,]
-            li= val
-
+        each val in ['vector_P','vector_a','p_vector','vector_e','vector_r']
+            li: img(src="@img/icons/icons.svg#"+val class="svg-"+val+"-dims" alt=val)
     ul.__nav-links
         - var items = ['Work', 'About', 'Blog', 'Contact']
-        - var links = ['#', '#', '#', '#']
+        - var links = ['work', 'about', 'blog', 'contact']
             each item, key in items 
                 if item === 'About'
-                    li.__nav-item.__nav-item-active: a(href=links[key])= item
+                    li: a.__nav-item.__nav-item-active(href='#' data-link=links[key])=item
                 else
-                    li.__nav-item: a(href=links[key])= item
+                    li: a.__nav-item(href='#' data-link=links[key])=item
+    .__nav-collapse.__nav-menu_button
+        spun.__nav-menu_lines
+    .__nav_overlay

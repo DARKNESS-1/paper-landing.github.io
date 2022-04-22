@@ -1,3 +1,6 @@
+// ? CSS Button code   
+// * not media screen   
+
 a {
     width : 160px;
     height: 44px;
@@ -13,7 +16,7 @@ a {
     border-radius : 30px;
     font-family   : $ff__lato;
     font-size     : 14px;
-    font-weight   : $ff__bold;
+    font-weight   : bold;
     line-height   : 24px;
     letter-spacing: 0.5px;
     text-align    : center;
@@ -27,7 +30,8 @@ a {
     top           : 0;
 
     &:hover {
-        background: lighten($color: $color-border, $amount: .1);
+        background: darken($color: $color-gray, $amount: .1);
+        opacity: .5;
     }
 
     &-white {

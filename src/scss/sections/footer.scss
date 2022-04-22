@@ -1,0 +1,48 @@
+//? CSS Footer code   
+//! not media screen   
+
+footer {
+    background: black;
+    min-height: 128px;
+}
+
+.__nav-footer {
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    font-family          : $ff__open_sans;
+    font-size            : 13px;
+    line-height          : 28px;
+    letter-spacing       : 0em;
+    color                : $color-gray-l;
+
+    &-copy {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        span::after {
+            content     : '❤';
+            color       : $color-red;
+            margin-right: .25rem;
+        }
+    }
+
+    &-links {
+        display              : grid;
+        grid-template-columns: repeat(auto-fit, minmax(90px, auto));
+        align-content        : center;
+    }
+
+    &-item {
+
+        a {
+            color: $color-gray-l;
+        }
+
+        &-active {
+            a {
+                color: $color-white;
+            }
+        }
+    }
+}
