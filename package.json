@@ -1,9 +1,12 @@
 {
-  "name": "paperlanding",
-  "version": "1.0.0",
-  "description": "Paper Landing",
+  "name": "paper-landing",
+  "description": "Paper is a portfolio site",
+  "version": "2.0.0",
+  "license": "ISC",
   "main": "gulpfile.js",
   "type": "module",
+  "homepage": "https://github.com/DARKNESS-1/paper-landing.github.io#readme",
+  "author": "Pavlo Rohovyi <pavlorohovyi@gmail.com>",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
@@ -11,8 +14,13 @@
     "deploy": "gulp deployFTP --build",
     "svgSprive": "gulp svgSprive"
   },
-  "author": "DARKNESS",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DARKNESS-1/paper-landing.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DARKNESS-1/paper-landing.github.io/issues"
+  },
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
@@ -52,13 +60,5 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "jquery": "^3.6.0",
     "simple-parallax-js": "^5.6.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DARKNESS-1/paper-landing.github.io.git"
-  },
-  "bugs": {
-    "url": "https://github.com/DARKNESS-1/paper-landing.github.io/issues"
-  },
-  "homepage": "https://github.com/DARKNESS-1/paper-landing.github.io#readme"
+  }
 }
