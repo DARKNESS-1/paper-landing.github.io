@@ -13,9 +13,7 @@ export const html = () => {
         ))
         .pipe(fileinclude())
         .pipe(pug({
-            // Сжатие HTML файлов 
             pretty: true,
-            // Показывать в терминале какой файл обработан
             verbose: true
         }))
         .pipe(app.plugins.replace(/@img\//g, 'img/'))

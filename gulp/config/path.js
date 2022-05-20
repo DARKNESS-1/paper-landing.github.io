@@ -1,10 +1,7 @@
-// Получаем имя папки проэкта 
 import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-// Путь к папке с результатом 
-const buildFolder = `./dist`;// Также можно использовать rootFolder 
-// Путь к папке с исходниками 
+const buildFolder = `./dist`;
 const srcFolder = `./src`;
 
 export const path = {
@@ -19,16 +16,16 @@ export const path = {
     src: {
         js: `${srcFolder}/js/app.js`,
         scss: `${srcFolder}/scss/style.scss`,
-        html: `${srcFolder}/*.pug`,// Для подключения PUG *.html изменяем на *.pug
+        html: `${srcFolder}/*.pug`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,
         files: `${srcFolder}/files/**/*.*`,
-        svgicons: `${srcFolder}/svgicons/*.svg`
+        svgicons: `${srcFolder}/svg/*.svg`
     },
     watch: {
         js: `${srcFolder}/js/**/*.js`,
         scss: `${srcFolder}/scss/**/*.scss`,
-        html: `${srcFolder}/**/*.pug`,// Для подключения PUG *.html изменяем на *.pug
+        html: `${srcFolder}/**/*.pug`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
         files: `${srcFolder}/files/**/*.*`
     },
@@ -36,5 +33,5 @@ export const path = {
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    ftp: ''// Корневая папка ресурса 
+    ftp: 'www.pavlorohovyi.co.ua/'
 };

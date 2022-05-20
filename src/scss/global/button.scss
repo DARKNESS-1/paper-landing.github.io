@@ -1,6 +1,3 @@
-// ? CSS Button code   
-// * not media screen   
-
 a {
     width : 160px;
     height: 44px;
@@ -9,29 +6,30 @@ a {
 }
 
 .__btn {
-    cursor        : pointer;
-    background    : transparent;
-    border        : 1px solid $color-white;
-    box-sizing    : border-box;
-    border-radius : 30px;
-    font-family   : $ff__lato;
-    font-size     : 14px;
-    font-weight   : bold;
-    line-height   : 24px;
-    letter-spacing: 0.5px;
-    text-align    : center;
-    vertical-align: top;
-    white-space   : nowrap;
-    color         : $color-white;
-    padding       : .5rem 2rem;
-    height        : 44px;
-    left          : 0;
-    right         : 0;
-    top           : 0;
+    cursor            : pointer;
+    background        : transparent;
+    border            : 1px solid $color-white;
+    -webkit-box-sizing: border-box;
+    box-sizing        : border-box;
+    border-radius     : 30px;
+    font-family       : $ff__lato;
+    font-size         : 14px;
+    font-weight       : bold;
+    line-height       : 24px;
+    letter-spacing    : 0.5px;
+    text-align        : center;
+    vertical-align    : top;
+    white-space       : nowrap;
+    color             : $color-white;
+    padding           : .5rem 2rem;
+    height            : 44px;
+    left              : 0;
+    right             : 0;
+    top               : 0;
 
     &:hover {
         background: darken($color: $color-gray, $amount: .1);
-        opacity: .5;
+        opacity   : .5;
     }
 
     &-white {

@@ -1,15 +1,18 @@
-//? CSS Navbar code   
-//* media screen   
-
 .__nav {
-    display        : flex;
-    justify-content: space-between;
-    height         : 104.27px;
-    left           : 0;
-    right          : 0;
-    top            : 0;
+    display         : -webkit-box;
+    display         : -ms-flexbox;
+    display         : flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack   : justify;
+    justify-content : space-between;
+    height          : 104.27px;
+    left            : 0;
+    right           : 0;
+    top             : 0;
 
     &-logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width  : 115.97px;
         padding: 0;
@@ -55,9 +58,13 @@
     }
 
     &-links {
-        display        : flex;
-        justify-content: end;
-        width          : $w100p;
+        display         : -webkit-box;
+        display         : -ms-flexbox;
+        display         : flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack   : end;
+        justify-content : end;
+        width           : $w100p;
     }
 
     &-item {
@@ -85,24 +92,26 @@
                 display: none;
             }
 
-            position           : fixed;
-            flex-direction     : column;
-            place-items        :center start;
-            background         : black;
-            width              : $w100p;
-            height             : auto;
-            top                : -$w100p;
-            right              : 0;
-            left               : 0;
-            overflow-y         : auto;
-            -webkit-transition : 0.8s;
-            -moz-transition    : 0.8s;
-            -o-transition      : 0.8s;
-            transition         : 0.8s;
-            opacity            : .5;
-            padding            : $rem*2 0;
-            z-index            : 30;
-            margin-top         : 0;
+            position              : fixed;
+            -webkit-box-orient    : vertical;
+            -webkit-box-direction : normal;
+            -ms-flex-direction    : column;
+            flex-direction        : column;
+            place-items           :center start;
+            background            : black;
+            width                 : $w100p;
+            height                : auto;
+            top                   : -$w100p;
+            right                 : 0;
+            left                  : 0;
+            overflow-y            : auto;
+            -webkit-transition    : 0.8s;
+            -o-transition         : 0.8s;
+            transition            : 0.8s;
+            opacity               : .5;
+            padding               : $rem*2 0;
+            z-index               : 30;
+            margin-top            : 0;
         }
 
         &-item {
@@ -112,6 +121,8 @@
 
         &-collapse {
             display      : initial !important;
+            display      : -webkit-box;
+            display      : -ms-flexbox;
             display      : flex;
             place-items  : center end;
             padding-right: $rem;
@@ -140,13 +151,13 @@
             border-radius     : 50%;
             background-color  : rgba(255, 255, 255, 0.5);
             -webkit-transition: 0.4s;
-            -moz-transition   : 0.4s;
             -o-transition     : 0.4s;
             transition        : 0.4s;
         }
 
         &-menu_button:hover &-menu_lines {
-            filter: brightness(0.7);
+            -webkit-filter: brightness(0.7);
+            filter        : brightness(0.7);
         }
 
         &-menu_button:hover {
@@ -162,15 +173,16 @@
             height            : 3px;
             background-color  : $color-red;
             -webkit-transition: 0.4s;
-            -moz-transition   : 0.4s;
             -o-transition     : 0.4s;
             transition        : 0.4s;
         }
 
         &-menu_lines {
-            top      : 50%;
-            left     : 50%;
-            transform: translate(-50%, -50%);
+            top              : 50%;
+            left             : 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform    : translate(-50%, -50%);
+            transform        : translate(-50%, -50%);
         }
 
         &-menu_lines::before {
@@ -188,19 +200,22 @@
         }
 
         &_active &-menu_lines::before {
-            top      : 0;
-            transform: rotate(45deg);
+            top              : 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform    : rotate(45deg);
+            transform        : rotate(45deg);
         }
 
         &_active &-menu_lines::after {
-            top      : 0;
-            transform: rotate(-45deg);
+            top              : 0;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform    : rotate(-45deg);
+            transform        : rotate(-45deg);
         }
 
         &_active &-links {
             top               : 0;
             -webkit-transition: 0.4s;
-            -moz-transition   : 0.4s;
             -o-transition     : 0.4s;
             transition        : 0.4s;
         }

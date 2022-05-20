@@ -1,12 +1,10 @@
-//? CSS Footer code   
-//! not media screen   
-
 footer {
     background: black;
     min-height: 128px;
 }
 
 .__nav-footer {
+    display              : -ms-grid;
     display              : grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     font-family          : $ff__open_sans;
@@ -16,9 +14,15 @@ footer {
     color                : $color-gray-l;
 
     &-copy {
-        display        : flex;
-        align-items    : center;
-        justify-content: center;
+        display          : -webkit-box;
+        display          : -ms-flexbox;
+        display          : flex;
+        -webkit-box-align: center;
+        -ms-flex-align   : center;
+        align-items      : center;
+        -webkit-box-pack : center;
+        -ms-flex-pack    : center;
+        justify-content  : center;
 
         span::after {
             content     : '❤';
@@ -28,8 +32,10 @@ footer {
     }
 
     &-links {
+        display              : -ms-grid;
         display              : grid;
         grid-template-columns: repeat(auto-fit, minmax(90px, auto));
+        -ms-flex-line-pack   : center;
         align-content        : center;
     }
 

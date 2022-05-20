@@ -1,6 +1,6 @@
 export let configFTP = {
-    host: "", // Адрес FTP сервера
-    user: "", // Имя пользователя
-    password: "", // Пароль
-    parallel: 5 // Кол-во одновременных потоков
+    host: "ftp.s59.freehost.com.ua", // FTP Host
+    user: "pavloroho", // User name
+    password: "q0H4kpL7ig", // Password
+    parallel: 5 // Number of concurrent threads
 }
